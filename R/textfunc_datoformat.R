@@ -5,5 +5,5 @@
 #' @export
 
 textfunc.datoformat <- function(date) {
-  return(str_trim(format(date, "%e. %B %Y")))
+  return(stringr::str_trim(format(date, "%e. %B %Y")))
 }
