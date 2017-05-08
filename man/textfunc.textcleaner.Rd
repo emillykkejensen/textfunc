@@ -10,11 +10,11 @@ textfunc.textcleaner(textdata, removeRT = FALSE, removeHashtag = FALSE,
 \arguments{
 \item{textdata}{character vector; The text you want cleaned}
 
-\item{removeRT}{logical; If FALSE (default) it wil remove 'RT' and 'via' from text}
+\item{removeRT}{logical; If TRUE it wil remove 'RT' and 'via' from text}
 
-\item{removeHashtag}{logical; If FALSE (default) it wil remove all words begining with '#' from text}
+\item{removeHashtag}{logical; If TRUE it wil remove all words begining with '#' from text}
 
-\item{removeHandles}{logical; If FALSE (default) it wil remove all words begining with '@' from text}
+\item{removeHandles}{logical; If TRUE it wil remove all words begining with '@' from text}
 }
 \value{
 Character string
