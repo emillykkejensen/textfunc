@@ -15,4 +15,3 @@ Character string in date format "%e. %B %Y"
 \description{
 Converts a Date into date format
 }
-

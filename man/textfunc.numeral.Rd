@@ -19,4 +19,3 @@ Character
 \description{
 Trun a number into a numeral (Danish)
 }
-

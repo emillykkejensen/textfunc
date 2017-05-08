@@ -17,4 +17,3 @@ Character string
 \description{
 Comma separat a list of text with "and" in the end
 }
-

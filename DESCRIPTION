@@ -6,5 +6,5 @@ Authors@R: person("Emil", "Lykke Jensen", email = "emil@explore23.dk", role = c(
 Description: A few nifty text functions for R
 License: What license is it under?
 LazyData: TRUE
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1
 Imports: stringr
