@@ -4,11 +4,15 @@
 \alias{textfunc.textcleaner}
 \title{Clean SoMe text}
 \usage{
-textfunc.textcleaner(textdata, removeRT = FALSE, removeHashtag = FALSE,
-  removeHandles = FALSE)
+textfunc.textcleaner(textdata, removePunctuation = TRUE, removeURLs = TRUE,
+  removeRT = FALSE, removeHashtag = FALSE, removeHandles = FALSE)
 }
 \arguments{
 \item{textdata}{character vector; The text you want cleaned}
+
+\item{removePunctuation}{logical; If TRUE (default) it wil remove all punctuation and symbols from text}
+
+\item{removeURLs}{logical; If TRUE (default) it wil remove all URLs from text}
 
 \item{removeRT}{logical; If TRUE it wil remove 'RT' and 'via' from text}
 
