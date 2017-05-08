@@ -3,3 +3,4 @@
 export(textfunc.datoformat)
 export(textfunc.listtext)
 export(textfunc.numeral)
+export(textfunc.textcleaner)
