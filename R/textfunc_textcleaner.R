@@ -16,6 +16,8 @@ textfunc.textcleaner <- function(textdata,
                                  removeHashtag = FALSE,
                                  removeHandles = FALSE){
 
+  library(stringi)
+
   if(removeRT) textdata <- gsub("(RT|via)((?:\\b\\W*@\\w+)+)", "", textdata)
   if(removeHashtag) textdata <- gsub("[#]\\S+", "", textdata)
   if(removeHandles) textdata <- gsub("[@]\\S+", "", textdata)
@@ -23,7 +25,7 @@ textfunc.textcleaner <- function(textdata,
   # if(removeURLs) textdata <- gsub("http://t.co/[a-z,A-Z,0-9]*{8}", "", textdata)
   # if(removeURLs) textdata <- gsub("https?:\\/\\/(.*?|\\/)(?=\\s|$)\\s?", "", "")
   if(removePunctuation) textdata <- gsub("[[:punct:]]+", "", textdata)
-  textdata <- tolower(textdata)
+  textdata <- stri_trans_tolower(textdata)
   textdata <- trimws(textdata)
 
   return(textdata)
